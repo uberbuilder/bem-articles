@@ -7,10 +7,9 @@ we will use the command-line application: `bem tools` and its subcommand: `bem s
 
 ![Online shop web page](http://img-fotki.yandex.ru/get/6505/14441195.26/0_6f0b2_557ef428_L.jpg "Online shop web page")
 
-## Tools
-You need a command-line toolkit [bem tools](https://github.com/bem/bem-tools) to
-begin with the project.
-Follow the installation steps in the corresponding repository.
+## Required Tools
+
+In order to complete all of the steps of this tutorial, you will need to install [BEM tools](https://github.com/bem/bem-tools).  This command-line toolkit is used to automate the process of building a BEM project.  Here is the [BEM tools installation guide](http://bem.info/tools/bem/installation/).
 
 ## Start with a project repository
 The easiest way to start is to copy a similar project repository with suitable
