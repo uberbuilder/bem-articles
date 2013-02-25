@@ -30,20 +30,24 @@ Build the project by running a `make` command:
     $ make
 ```
 
-The first time you run `make` will install all required npm packadges *locally* to the
-project directory (into: `./node_modules`).  Each subsiquent execution of the `make`
-command will simply start the `bem server`.
-There is an [easier more beautiful way](https://github.com/bem/project-stub#usage)
-to run the [BEM tools](https://github.com/bem/bem-tools) server.  You can find those
-intructions here: [https://github.com/bem/project-stub#usage](https://github.com/bem/project-stub#usage)
+When you run the `make` command for the first time, we install all of the required dependencies ([bem-tools](http://github.com/bem/bem-tools))
+to the `./node_modules` directory within the **local project directory**.  This is *not* the same thing as
+[installing bem-tools locally to your environment](http://bem.info/tools/bem/installation/) - which, if you haven't
+done already, we strongly suggest that you do.  This is by far the easiest, quickest way to use
+[bem-tools](http://github.com/bem/bem-tools) in [a more beautiful way](#an-easier-more-beautiful-way).
+For more details on the usage of the BEM [project-stub](https://github.com/bem/project-stub)
+go here: [https://github.com/bem/project-stub#usage](https://github.com/bem/project-stub#usage)
 
-When the `make` command finishes, you will see the following message:
+When the `make` command *finally* finishes, you will see the following message:
 
     info: Server is listening on port 8080. Point your browser to http://localhost:8080/
 
-This means that the `bem server` is up and running!  While the `bem server` is running, your project is
-automatically rebuilt each time you change any file.  It is not necessary to run the `bem server` or `make`
-command every time you save a file to make the magic happen.
+This means that your localized version of the `bem server` is up and running!  *(That was easy right?)*
+
+While the `bem server` is running it *"watches"* your project for changes.  Your project automagically rebuilds
+it's self **every** time you change **any** file.  It is not necessary to run `make`, or `bem server` each
+time you make a change.  Obviously this means that `bem server` does need to be running for changes to occure.
+Keep reading, you'll get the hang of it...
 
 ## Changing pages
 You have just one page in your project to begin with:
