@@ -57,11 +57,13 @@ while `bem server` loads all of the libraries used for building the page.  If yo
 just refresh the page.)
 
 This project's structure presumes that blocks are stored under the
-`desktop.blocks` folder and pages under `desktop.bundles` folder.<br/>
-In fact, `desktop.bundles` may contain bundles consisting of blocks most
-commonly used on most of the pages, i.e. `common` block bundle, or all the blocks
-from all the pages, i.e. `all` block bundle. Finally, the simplest case:
-you can have a set of blocks for each page; it's how we will proceed.
+`desktop.blocks` directory and pages under the `desktop.bundles` directory.
+
+Strictly speaking, `desktop.bundles` contains ***"bundles of blocks"***.  This may be the most often used
+blocks from several pages (the `common` pages), a "block bundle", a combination of several pages
+(`all` if you combine all of the pages), or - the simplest case - a bundles of blocks; a set of blocks to be
+used on a single page.  For the purposes of this tutorial, we will be following the last example, which is
+the most simple way to start.
 
 You can modify the page by changing the `desktop.bundles/index/index.bemjson.js`
 file.
