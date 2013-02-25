@@ -50,11 +50,11 @@ time you make a change.  Obviously this means that `bem server` does need to be 
 Keep reading, you'll get the hang of it...
 
 ## Changing pages
-You have just one page in your project to begin with:
+You start out with only one file in your project:
 [index.html](http://localhost:8080/desktop.bundles/index/index.html). Try and
-open it in your browser.<br/>
-When opening the page for the first time, be prepared to wait a few seconds
-while `bem server` is loading all the libraries used for building the page.
+open it in your browser. (When opening the page for the first time, be prepared to wait a few seconds
+while `bem server` loads all of the libraries used for building the page.  If your browser times-out,
+just refresh the page.)
 
 This project's structure presumes that blocks are stored under the
 `desktop.blocks` folder and pages under `desktop.bundles` folder.<br/>
