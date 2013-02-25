@@ -30,21 +30,20 @@ Build the project by running a `make` command:
     $ make
 ```
 
-The first launch may take some time as required npm packadges are being
-installed in background.
+The first time you run `make` will install all required npm packadges *locally* to the
+project directory (into: `./node_modules`).  Each subsiquent execution of the `make`
+command will simply start the `bem server`.
+There is an [easier more beautiful way](https://github.com/bem/project-stub#usage)
+to run the [BEM tools](https://github.com/bem/bem-tools) server.  You can find those
+intructions here: [https://github.com/bem/project-stub#usage](https://github.com/bem/project-stub#usage)
 
-For development you can run
+When the `make` command finishes, you will see the following message:
 
-```js
-    $ make server
-```
+    info: Server is listening on port 8080. Point your browser to http://localhost:8080/
 
-Upon completion, you'll see the following message:
-
-   info: Server is listening on port 8080. Point your browser to http://localhost:8080/
-
-This means `bem server` is up and running; from this point on, your project is
-automatically rebuilt each time you change something.
+This means that the `bem server` is up and running!  While the `bem server` is running, your project is
+automatically rebuilt each time you change any file.  It is not necessary to run the `bem server` or `make`
+command every time you save a file to make the magic happen.
 
 ## Changing pages
 You have just one page in your project to begin with:
